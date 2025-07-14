@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 首页项 -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home"
+        app:showAsAction="ifRoom" />
+
+    <!-- 搜索项 -->
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/nav_search"
+        app:showAsAction="ifRoom" />
+
+    <!-- 收藏项 -->
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/nav_favorites"
+        app:showAsAction="ifRoom" />
+
+    <!-- 消息项 -->
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/nav_notifications"
+        app:showAsAction="ifRoom" />
+
+    <!-- 个人中心项 -->
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/nav_profile"
+        app:showAsAction="ifRoom" />
+
+</menu>

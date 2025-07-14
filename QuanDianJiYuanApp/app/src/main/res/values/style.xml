@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedTextInputLayout" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">90dp</item> <!-- Adjust radius as needed -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.CornerRadius20dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">90dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.SearchBox" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">90dp</item>  <!-- 更大的圆角 -->
+    </style>
+    <!-- res/values/styles.xml -->
+
+
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!-- 在res/values/dimens.xml中定义 -->
+    <dimen name="status_bar_height">24dp</dimen>
+</resources>

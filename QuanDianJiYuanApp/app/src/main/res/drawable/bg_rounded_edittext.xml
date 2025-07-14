@@ -1,0 +1,6 @@
+<!-- res/drawable/bg_rounded_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/dark_gray"/>
+    <corners android:radius="20dp"/> <!-- 四个角统一圆角 -->
+    <stroke android:width="0dp" android:color="#616161"/>
+</shape>

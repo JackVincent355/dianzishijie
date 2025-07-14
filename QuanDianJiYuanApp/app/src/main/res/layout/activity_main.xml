@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"> <!-- 确保状态栏不覆盖内容 -->
+
+    <!-- 删除原有的 Toolbar 和 AppBarLayout -->
+
+    <!-- 搜索栏（直接放在顶部，代替标题） -->
+    <RelativeLayout
+        android:id="@+id/search_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="8dp"> <!-- 顶部内边距，适配状态栏 -->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:boxBackgroundMode="filled"
+
+            android:layout_alignParentEnd="true"
+
+
+            app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@color/dark_gray_background"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SearchBox"
+            app:hintEnabled="false"
+            android:minHeight="60dp" > <!-- 确保容器能包裹更高的输入框 -->
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/searchinput"
+                android:layout_width="match_parent"
+
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_rounded_edittext"
+                android:backgroundTint="@null"
+                android:cursorVisible="false"
+                android:gravity="center_horizontal|top"
+                android:hint="搜索商品..."
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_dark"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/dark_gray"
+            android:contentDescription="搜索"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <!-- 内容区域 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/search_container_layout"/>
+
+    <!-- 底部导航栏 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"/>
+</RelativeLayout>

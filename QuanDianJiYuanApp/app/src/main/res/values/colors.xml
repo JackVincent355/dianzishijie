@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 主色调 - 选中状态颜色 -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="gray_light">#F5F5F5</color>  <!-- 浅灰背景 -->
+    <color name="gray_medium">#E0E0E0</color> <!-- 中灰边框 -->
+    <color name="gray_dark">#858383</color>  <!-- 深灰提示文字，搜索框提示的文字颜色 -->
+    <!-- 灰色 - 未选中状态颜色 -->
+    <color name="gray">#E9E0E0</color>
+    <color name="gray_600">#E6DDDD</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="dark_gray_background">#424242</color>  <!-- 暗灰背景 -->
+    <color name="dark_gray">#F2E8E8</color>  <!-- 暗灰色背景 ，搜索框的背景颜色-->
+</resources>
